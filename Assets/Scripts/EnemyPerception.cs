@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyPerception : MonoBehaviour
 {
-    public float sightDistance = 5.0f;
+    public float sightDistance = 0.5f;
     public float lostPlayerTime = 4.0f;
     GameObject player;
     EnemyShooting enemyShooting;

@@ -67,6 +67,8 @@
     <Compile Include="Assets\Fran\MovementPlayer.cs" />
     <Compile Include="Assets\Scripts\EnemyBehaviour.cs" />
     <Compile Include="Assets\Scripts\EnemyPerception.cs" />
+    <None Include="Assets\LevelDesign\ProjectSettings\ProjectVersion.txt" />
+    <None Include="Assets\Adrian\My_ProjectSettings\ProjectVersion.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/admin/Documents/MEGA/Unity/ReadySetRhino/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
