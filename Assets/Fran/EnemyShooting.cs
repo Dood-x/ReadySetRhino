@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EnemyShooting : MonoBehaviour
 {
-    public GameObject bullet;
+   public GameObject bullet;
+
 
    public float fireRate;
     float nextFire;
