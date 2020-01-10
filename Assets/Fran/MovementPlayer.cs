@@ -11,12 +11,20 @@ public class MovementPlayer : MonoBehaviour
 
     Vector2 movement;
 
-    public float playerHealth;
+    float health;
+    public float maxHealth = 100f;
+
     [SerializeField] private Text healthText;
+
+    public void Start()
+    {
+        health = maxHealth;
+        UpdateHealth();
+    }
 
     public void UpdateHealth()
     {
-        healthText.text = playerHealth.ToString("0");
+        healthText.text = "Health: " + (int)(health);
     }
 
    void Update()
@@ -30,5 +38,11 @@ public class MovementPlayer : MonoBehaviour
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.deltaTime);
+    }
+
+    public void Damage(float damage)
+    {
+        health = Mathf.Max(0, health - damage);
+        UpdateHealth();
     }
 }
